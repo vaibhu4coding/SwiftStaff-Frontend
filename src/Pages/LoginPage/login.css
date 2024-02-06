@@ -1,0 +1,57 @@
+.logo-container {
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logoImg {
+    max-width: 10vw;
+  }
+  
+  .login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-container h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .login-container input[type='text'],
+  .login-container input[type='password'] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-container .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  

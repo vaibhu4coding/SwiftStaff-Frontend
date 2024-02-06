@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from './Pages/Home';
+import LoginPage from './Pages/LoginPage/LoginPage';
+import ProjectTrackPage from './Pages/ProjectTrackPage';
+import EmployeeListPage from './Pages/EmployeeListPage';
+import AttendanceTrackPage from './Pages/AttendanceTrackPage';
+import PrivateRoute from './components/PrivateRoute';
+import ErrorPage from './Pages/ErrorPage';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<LoginPage></LoginPage>}></Route>
+        <Route element={<PrivateRoute></PrivateRoute>}>
+          <Route path='/home' element={<Home></Home>}></Route>
+          <Route path='/project-track' element={<ProjectTrackPage></ProjectTrackPage>}></Route>
+          <Route path='/employees' element={<EmployeeListPage></EmployeeListPage>}></Route>
+          <Route path='/attendance' element={<AttendanceTrackPage></AttendanceTrackPage>}></Route>
+        </Route>
+        <Route path='*' element={<ErrorPage></ErrorPage>}></Route>
+      </Routes>
+    </Router>
   );
 }
 
