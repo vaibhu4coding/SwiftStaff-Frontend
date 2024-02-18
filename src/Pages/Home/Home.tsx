@@ -8,9 +8,14 @@ const HomeScreen: React.FC = () => {
     <Navbar></Navbar>
     <div className="home-container">
       <div className="top-section">
-      <Link to="/attendance" style={{textDecoration:'none'}}>
+      {/* <Link to="/attendance" style={{textDecoration:'none'}}>
         <div className="box attendance-box">
           Attendance Tracker
+        </div>
+        </Link> */}
+        <Link to="/create-project" style={{textDecoration:'none'}}>
+        <div className="box attendance-box">
+          Create Project
         </div>
         </Link>
         <Link to="/employees" style={{textDecoration:'none'}}>

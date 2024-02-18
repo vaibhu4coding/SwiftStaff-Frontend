@@ -3,12 +3,13 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './Pages/Home/Home';
 import LoginPage from './Pages/LoginPage/LoginPage';
-import ProjectTrackPage from './Pages/ProjectTrackPage';
+import ProjectTrackPage from './Pages/ProjectTrackPage/ProjectTrackPage';
 import EmployeeListPage from './Pages/EmployeeListPage/EmployeeListPage';
 import AttendanceTrackPage from './Pages/AttendanceTrackPage';
 import PrivateRoute from './components/PrivateRoute';
 import ErrorPage from './Pages/ErrorPage';
 import EmployeeFormPage from './Pages/EmployeeFormPage/EmployeeFormPage';
+import ProjectForm from './Pages/ProjectForm/ProjectForm';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/employees' element={<EmployeeListPage></EmployeeListPage>}></Route>
           <Route path='/attendance' element={<AttendanceTrackPage></AttendanceTrackPage>}></Route>
           <Route path='/create-employee' element={<EmployeeFormPage></EmployeeFormPage>}></Route>
+          <Route path='/create-project' element={<ProjectForm></ProjectForm>}></Route>
         </Route>
         <Route path='*' element={<ErrorPage></ErrorPage>}></Route>
       </Routes>

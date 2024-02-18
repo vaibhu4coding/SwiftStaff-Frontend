@@ -16,6 +16,7 @@ const Navbar: React.FC = () => {
         <Link to="/employees">Employees</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/create-employee">Create Employee</Link>
+        <Link to='/create-project'>Create project</Link>
       </div>
       <div className='right-greeting'>
         Hello, {name}

@@ -1,17 +1,15 @@
-/* Home.css */
-
 .home-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  gap: 20px; /* Spacing between the boxes */
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 0 20px; /* Add some padding to the sides */
+  padding: 0 20px; 
 }
 
 .box {
-  width: 100%; /* Boxes fill the width of their container */
+  width: 100%; 
   height: 200px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -26,10 +24,9 @@
 .box a {
   text-decoration: none;
   color: inherit;
-  cursor: pointer; /* Add cursor pointer for better UX */
+  cursor: pointer; 
 }
 
-/* Remove underline and blue color */
 .box a:hover {
   text-decoration: none;
   color: inherit;
