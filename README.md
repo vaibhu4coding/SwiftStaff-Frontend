@@ -1,6 +1,6 @@
-# Project Management System Frontend
+# SwiftStaff Frontend
 
-This is the frontend for a Project Management System application. It provides a user interface for managing projects and employees.
+SwiftStaff is a comprehensive Employee Management System seamlessly integrating HR functionalities, from streamlined talent acquisition to efficient workforce management. Empower your team with innovative tools, fostering collaboration and unlocking the full potential of your workforce.
 
 ## Setup
 
