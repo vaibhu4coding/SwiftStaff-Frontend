@@ -1,0 +1,52 @@
+/* Home.css */
+
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Spacing between the boxes */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px; /* Add some padding to the sides */
+}
+
+.box {
+  width: 100%; /* Boxes fill the width of their container */
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.box a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; /* Add cursor pointer for better UX */
+}
+
+/* Remove underline and blue color */
+.box a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.attendance-box {
+  background-color: #ffcc00;
+}
+
+.employee-list-box {
+  background-color: #66ccff;
+}
+
+.project-progress-box {
+  background-color: #ff6666;
+}
+
+.create-employee-box {
+  background-color: #99ff99;
+}

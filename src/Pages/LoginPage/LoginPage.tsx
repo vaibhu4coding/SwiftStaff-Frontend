@@ -29,6 +29,7 @@ const LoginPage: React.FC = () => {
       if (response.status === 200) {
         alert(`Login successful: Hi! ${response.data.employeeFName}`);
         localStorage.setItem('adminToken', response.data.token);
+        localStorage.setItem('name',response.data.employeeFName)
         window.location.href = '/home';
       } else {
         setErrorMessage(response.data.message);

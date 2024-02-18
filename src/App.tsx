@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from './Pages/Home';
+import Home from './Pages/Home/Home';
 import LoginPage from './Pages/LoginPage/LoginPage';
 import ProjectTrackPage from './Pages/ProjectTrackPage';
-import EmployeeListPage from './Pages/EmployeeListPage';
+import EmployeeListPage from './Pages/EmployeeListPage/EmployeeListPage';
 import AttendanceTrackPage from './Pages/AttendanceTrackPage';
 import PrivateRoute from './components/PrivateRoute';
 import ErrorPage from './Pages/ErrorPage';
-
+import EmployeeFormPage from './Pages/EmployeeFormPage/EmployeeFormPage';
 
 function App() {
   return (
@@ -17,9 +17,10 @@ function App() {
         <Route path='/' element={<LoginPage></LoginPage>}></Route>
         <Route element={<PrivateRoute></PrivateRoute>}>
           <Route path='/home' element={<Home></Home>}></Route>
-          <Route path='/project-track' element={<ProjectTrackPage></ProjectTrackPage>}></Route>
+          <Route path='/projects' element={<ProjectTrackPage></ProjectTrackPage>}></Route>
           <Route path='/employees' element={<EmployeeListPage></EmployeeListPage>}></Route>
           <Route path='/attendance' element={<AttendanceTrackPage></AttendanceTrackPage>}></Route>
+          <Route path='/create-employee' element={<EmployeeFormPage></EmployeeFormPage>}></Route>
         </Route>
         <Route path='*' element={<ErrorPage></ErrorPage>}></Route>
       </Routes>
